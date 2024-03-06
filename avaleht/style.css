@@ -1,0 +1,82 @@
+body {
+    font-family: "Playfair Display";
+    color: rgb(20, 50, 80);
+}
+
+h1 {
+    font-size: 150%;
+    padding-left: 490px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: incline;
+    float: left;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 80%;
+    display: incline;
+    float: right;
+    padding-right: 490px;
+    margin-top: 35px;
+
+}
+
+#avaleht {
+    color: black;
+}
+
+#getthings a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#getthings a:hover {
+    color: black;
+}
+
+#coach a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#coach a:hover {
+    color: black;
+}
+
+#blogi a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#blogi a:hover {
+    color: black;
+}
+
+main {
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+
+}
+
+#getthingsdone a {
+    color: rgb(164, 188, 202);
+}
+
+#getthingsdone {
+    margin-top: 60px;
+    color: rgb(20, 50, 80);
+    font-size: 21px;
+    line-height: 1.5;
+
+}
+
+#info {
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: rgb(20, 50, 80);
+
+}
