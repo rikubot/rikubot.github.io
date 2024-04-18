@@ -19,13 +19,9 @@ header {
     margin-top: 2rem;
 }
 
-h1,
-h2 {
-    margin: 0;
-}
-
 h1 {
     font-size: 1.5rem;
+    margin: 0;
 }
 
 h2 {
@@ -33,6 +29,17 @@ h2 {
     font-size: 0.9rem;
     display: flex;
     gap: 15px;
+    align-items: center;
+    margin: 0;
+}
+
+.language-links {
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 a {
@@ -100,7 +107,7 @@ img {
 
 #list,
 #jutt {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 100;
     max-width: 800px;
@@ -147,5 +154,86 @@ img {
 
     #list li b {
         margin-bottom: 0.5em;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+
+    }
+
+    h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .language-links {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    h2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #avaleht,
+    #getthings,
+    #coach,
+    #blogi {
+        padding-left: 0;
+    }
+}
+
+#est a {
+    color: black;
+}
+
+.info {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .info {
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .img3 {
+        max-width: 150%;
+
+        height: auto;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .img3 {
+        max-width: 200%;
+        width: 100%;
+        height: auto;
     }
 }

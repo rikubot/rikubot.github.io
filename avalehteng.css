@@ -1,13 +1,8 @@
-* {
-    box-sizing: border;
-}
-
 body {
     font-family: "Playfair Display", serif;
     color: rgb(20, 50, 80);
     margin: 0;
     padding: 0;
-
 }
 
 header {
@@ -15,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
 
@@ -42,6 +37,10 @@ h2 {
     width: 100%;
 }
 
+#avaleht a {
+    color: black;
+}
+
 a {
     color: rgb(164, 188, 202);
     text-decoration: none;
@@ -51,7 +50,23 @@ a:hover {
     color: black;
 }
 
+main {
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 1.5;
+    padding: 0 5%;
+    max-width: 100%;
+}
+
+.argo {
+    width: 92%;
+}
+
 .img2 {
+    width: 53%;
+}
+
+.img3 {
     width: 53%;
 }
 
@@ -67,8 +82,7 @@ img {
     height: auto;
 }
 
-#list,
-#jutt,
+#getthingsdone,
 #info {
     margin: 60px auto;
     color: rgb(20, 50, 80);
@@ -76,14 +90,11 @@ img {
     line-height: 1.5;
 }
 
-
 #info {
-    text-align: center;
-    font-size: 0.9rem;
-    line-height: 1.7;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 90%;
+    font-size: 0.9375rem;
+    line-height: 1.13;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
@@ -98,25 +109,40 @@ img {
     }
 
     main,
-    #list,
-    #jutt,
+    #getthingsdone,
     #info {
         font-size: 1rem;
     }
 }
 
-#list,
-#jutt {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 100;
-    max-width: 800px;
-    width: 90%;
-    margin: 20px auto;
+#avaleht {
+    color: black;
 }
 
-
 #getthings a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#getthings a:hover {
+    color: black;
+}
+
+#coach a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#coach a:hover {
+    color: black;
+}
+
+#blogi a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}
+
+#blogi a:hover {
     color: black;
 }
 
@@ -167,7 +193,7 @@ img {
     }
 }
 
-#est a {
+#eng a {
     color: black;
 }
 
@@ -218,8 +244,4 @@ img {
         width: 100%;
         height: auto;
     }
-}
-
-li {
-    margin-top: 10px;
 }

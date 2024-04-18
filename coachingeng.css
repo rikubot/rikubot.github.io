@@ -51,8 +51,8 @@ a:hover {
     color: black;
 }
 
-.img2 {
-    width: 53%;
+.img3 {
+    width: 40%;
 }
 
 .info {
@@ -116,8 +116,45 @@ img {
 }
 
 
-#getthings a {
+#coach a {
     color: black;
+}
+
+#list ol {
+    text-align: left;
+    padding-left: 0;
+}
+
+#list li p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#list li b {
+    display: block;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    #list li p {
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+    }
+
+    #list li b {
+        margin-bottom: 0.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    #list li p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #list li b {
+        margin-bottom: 0.5em;
+    }
 }
 
 
@@ -167,7 +204,7 @@ img {
     }
 }
 
-#est a {
+#eng a {
     color: black;
 }
 
@@ -199,27 +236,4 @@ img {
         width: 100%;
         height: auto;
     }
-}
-
-
-@media (max-width: 768px) {
-    .img2 {
-        max-width: 150%;
-
-        height: auto;
-        width: 100%;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .img2 {
-        max-width: 200%;
-        width: 100%;
-        height: auto;
-    }
-}
-
-li {
-    margin-top: 10px;
 }
