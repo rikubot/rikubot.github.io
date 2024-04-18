@@ -1,5 +1,5 @@
 * {
-    box-sizing: border;
+    box-sizing: border-box;
 }
 
 body {
@@ -7,7 +7,6 @@ body {
     color: rgb(20, 50, 80);
     margin: 0;
     padding: 0;
-
 }
 
 header {
@@ -15,8 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    margin-bottom: 2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h1,
@@ -33,6 +32,16 @@ h2 {
     font-size: 0.9rem;
     display: flex;
     gap: 15px;
+    align-items: center;
+}
+
+.language-links {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 a {
@@ -40,25 +49,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+#blogi a,
+#est a {
     color: black;
 }
 
-@media (max-width: 768px) {
-
-    h1,
-    h2 {
-        flex-direction: column;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    header,
-    #info,
-    #list,
-    main {
-        padding: 0 10px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #info,
@@ -70,23 +69,159 @@ a:hover {
     width: 90%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-#blogi a {
-    color: black;
-}
-
 #info {
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.2;
-    color: rgb(20, 50, 80);
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: auto;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+
+    header,
+    h1,
+    h2,
+    main,
+    #info,
+    #list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    .language-links,
+    .info {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .info {
+        width: 10%;
+    }
+}
+
+.construction {
+    text-align: center;
+    height: 100vh;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+@media (max-width: 600px) {
+    .responsive {
+        max-width: 100%;
+    }
+}
+
+#title {
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 2rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 100;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 1.25rem;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .scheme {
+        max-width: 150%;
+
+        height: auto;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .scheme {
+        max-width: 200%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.scheme {
+    margin-top: 4rem;
+}
+
+.scheme {
+    text-align: center;
+    width: 100%;
+}
+
+.text-block {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .text-block {
+        width: 90%;
+    }
+}
+
+.text-block h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .text-block h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    line-height: 1.7;
 }
