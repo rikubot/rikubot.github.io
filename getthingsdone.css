@@ -223,3 +223,18 @@ img {
 li {
     margin-top: 10px;
 }
+
+.img-responsive {
+    width: 53%;
+}
+
+
+h1 {
+    color: rgb(20, 50, 80);
+}
+
+
+#kontakt a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
+}

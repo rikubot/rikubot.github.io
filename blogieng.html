@@ -9,25 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1>ARGO RANNAMETS</h1>
+        <a href="C:/Users/rihar/OneDrive/Desktop/UPT/avalehteng/avalehteng.html">
+            <h1>ARGO RANNAMETS</h1>
+        </a>
         <div class="main-links">
             <h2 id="avaleht">
-                <a href="avalehteng.html">HOMEPAGE</a>
+                <a href="C:/Users/rihar/OneDrive/Desktop/UPT/avalehteng/avalehteng.html">HOMEPAGE</a>
                 <span id="getthings" style="padding-left:5px"><a
-                        href="getthingsdoneeng.html">GET
+                        href="C:/Users/rihar/OneDrive/Desktop/UPT/getthingsdoneeng/getthingsdoneeng.html">GET
                         THINGS
                         DONE</a></span>
                 <span id="coach" style="padding-left:5px"><a
-                        href="coachingeng.html">COACHING &
+                        href="C:/Users/rihar/OneDrive/Desktop/UPT/coachingeng/coachingeng.html">COACHING &
                         MENTORING</a></span>
                 <span id="blogi" style="padding-left:5px"><a>BLOG</a></span>
+                <span id="kontakt" style="padding-left: 5x"><a
+                        href="C:\Users\rihar\OneDrive\Desktop\UPT\kontakteng\kontakteng.html">CONTACT</a></span>
             </h2>
             <div class="language-links">
-                <span id="est"><a href="blogi.html"
+                <span id="est"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\blogi\blogi.html"
                         style="padding-right: 5px">EST</a></span>
                 <span id="eng"><a style="padding-left: 5px">ENG</a></span>
             </div>
@@ -36,6 +41,10 @@
     <main>
         <div id="title">
             <span id="pealkiri">The Three Cornerstones of Intrinsic Motivation: Purpose, Mastery and Autonomy</span>
+            <button id="likebutton" class="like-button">
+                <i id="clapIcon" class="fa-solid fa-hands-clapping"></i>
+                <span id="likeCount">0</span>
+            </button>
         </div>
         <div class="scheme">
             <img src="images/1_uRMqRpKWLUuSDQF81ZTBFw.jpg">
@@ -189,5 +198,32 @@
             Magere OÜ</p>
     </div>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var likeButton = document.getElementById('likebutton');
+        var likeCount = document.getElementById('likeCount');
+
+        likeCount.textContent = localStorage.getItem('likeCount') || 0;
+        if (localStorage.getItem('liked') === 'true') {
+            likeButton.classList.add('liked');
+        }
+
+        likeButton.addEventListener('click', function () {
+            var currentCount = parseInt(likeCount.textContent);
+            if (likeButton.classList.contains('liked')) {
+                currentCount -= 1;
+                likeButton.classList.remove('liked');
+                localStorage.setItem('liked', 'false');
+            } else {
+                currentCount += 1;
+                likeButton.classList.add('liked');
+                localStorage.setItem('liked', 'true');
+            }
+            likeCount.textContent = currentCount;
+            localStorage.setItem('likeCount', currentCount);
+        });
+    });
+</script>
 
 </html>

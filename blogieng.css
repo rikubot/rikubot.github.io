@@ -13,14 +13,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1rem 2%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 h1,
 h2 {
     margin: 0;
+    text-align: center;
 }
 
 h1 {
@@ -130,7 +132,7 @@ img {
 #title {
     font-family: "Playfair Display", serif;
     color: black;
-    font-size: 2rem;
+    font-size: calc(16px + 1vw);
     margin: 0 auto;
     line-height: 1.5;
     font-weight: 100;
@@ -139,8 +141,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: start;
     font-weight: 700;
+
 }
 
 @media (max-width: 768px) {
@@ -195,7 +198,7 @@ img {
 }
 
 .text-block {
-    width: 40%;
+    width: 700px;
     margin: 0 auto;
     text-align: left;
     padding: 20px;
@@ -224,4 +227,98 @@ img {
 .text-block p {
     font-size: 1.2rem;
     line-height: 1.7;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 2vw 4vw;
+    text-align: center;
+    font-size: calc(0.8vw + 10px);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 2vw 4vw;
+        font-size: calc(2vw + 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 3vw 6vw;
+        font-size: calc(2vw + 10px);
+    }
+}
+
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.like-button:focus {
+    outline: none;
+}
+
+.liked {
+    color: green;
+}
+
+.liked #likeCount {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 5vw;
+    }
+}
+
+.like-button span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: calc(14px + 2vw);
+    }
+
+    #likebutton {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: calc(12px + 1.5vw);
+    }
+}
+
+.like-button i,
+.like-button span {
+    font-size: calc(16px + 0.5vw);
+}
+
+
+h1 {
+    color: rgb(20, 50, 80);
+}
+
+
+#kontakt a {
+    color: rgb(164, 188, 202);
+    text-decoration: none;
 }
