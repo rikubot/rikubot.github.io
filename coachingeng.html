@@ -13,24 +13,42 @@
 
 <body>
     <header>
-        <a href="avalehteng.html">
+        <div class="menu-button">&#9776; Menu</div>
+        <div class="dropdown-content" style="display: none;">
+            <span id="avaleht2eng"><a
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\avalehteng\avalehteng.html">HOMEPAGE</a></span>
+            <span id="getthings2eng"><a
+                    href="C:/Users/rihar/OneDrive/Desktop/UPT/getthingsdoneeng/getthingsdoneeng.html">GET THINGS
+                    DONE</a></span>
+            <span id="coaching2eng"><a href="C:/Users/rihar/OneDrive/Desktop/UPT/coachingeng/coachingeng.html">COACHING
+                    & MENTORING</a></span>
+            <span id="blogi2eng"><a href="C:/Users/rihar/OneDrive/Desktop/UPT/blogieng/blogieng.html">BLOG</a></span>
+            <span id="kontakt2eng"><a
+                    href="C:/Users/rihar/OneDrive/Desktop/UPT/kontakteng/kontakteng.html">CONTACT</a></span>
+            <div class="language-switcher">
+                <span id="est2"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\coaching\coaching.html">EST</a></span>
+                <span id="eng2"><a
+                        href="C:\Users\rihar\OneDrive\Desktop\UPT\coachingeng\coachingeng.html">ENG</a></span>
+            </div>
+        </div>
+        <a href="C:/Users/rihar/OneDrive/Desktop/UPT/avalehteng/avalehteng.html">
             <h1>ARGO RANNAMETS</h1>
         </a>
         <div class="main-links">
             <h2 id="avaleht">
-                <a href="avalehteng.html">HOMEPAGE</a>
+                <a href="C:/Users/rihar/OneDrive/Desktop/UPT/avalehteng/avalehteng.html">HOMEPAGE</a>
                 <span id="getthings" style="padding-left:5px"><a
-                        href="getthingsdoneeng.html">GET
+                        href="C:/Users/rihar/OneDrive/Desktop/UPT/getthingsdoneeng/getthingsdoneeng.html">GET
                         THINGS
                         DONE</a></span>
                 <span id="coach" style="padding-left:5px"><a>COACHING & MENTORING</span></a>
                 <span id="blogi" style="padding-left:5px"><a
-                        href="blogieng.html">BLOG</a></span>
+                        href="C:/Users/rihar/OneDrive/Desktop/UPT/blogieng/blogieng.html">BLOG</a></span>
                 <span id="kontakt" style="padding-left: 5x"><a
-                        href="kontakteng.html">CONTACT</a></span>
+                        href="C:\Users\rihar\OneDrive\Desktop\UPT\kontakteng\kontakteng.html">CONTACT</a></span>
             </h2>
             <div class="language-links">
-                <span id="est"><a href="coaching.html"
+                <span id="est"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\coaching\coaching.html"
                         style="padding-right: 5px">EST</a></span>
                 <span id="eng"><a style="padding-left: 5px">ENG</a></span>
             </div>
@@ -84,6 +102,27 @@
             argo.rannamets@gmail.com <br>
             Magere OÜ</p>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.querySelector('.menu-button');
+            var dropdown = document.querySelector('.dropdown-content');
+
+            menuButton.addEventListener('click', function () {
+                var buttonRect = menuButton.getBoundingClientRect();
+
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                    menuButton.classList.remove('no-border-bottom');
+                } else {
+                    dropdown.style.display = 'block';
+                    menuButton.classList.add('no-border-bottom');
+                }
+                dropdown.style.top = buttonRect.bottom + 'px';
+                dropdown.style.right = (document.body.clientWidth - buttonRect.right) + 'px';
+            });
+        });
+
+    </script>
 </body>
 
 </html>

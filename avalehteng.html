@@ -13,7 +13,24 @@
 
 <body>
     <header>
-        <a href="avalehteng.html">
+        <div class="menu-button">&#9776; Menu</div>
+        <div class="dropdown-content" style="display: none;">
+            <span id="avaleht2eng"><a
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\avalehteng\avalehteng.html">HOMEPAGE</a></span>
+            <span id="getthings2eng"><a
+                    href="C:/Users/rihar/OneDrive/Desktop/UPT/getthingsdoneeng/getthingsdoneeng.html">GET THINGS
+                    DONE</a></span>
+            <span id="coaching2eng"><a href="C:/Users/rihar/OneDrive/Desktop/UPT/coachingeng/coachingeng.html">COACHING
+                    & MENTORING</a></span>
+            <span id="blogi2eng"><a href="C:/Users/rihar/OneDrive/Desktop/UPT/blogieng/blogieng.html">BLOG</a></span>
+            <span id="kontakt2eng"><a
+                    href="C:/Users/rihar/OneDrive/Desktop/UPT/kontakteng/kontakteng.html">CONTACT</a></span>
+            <div class="language-switcher">
+                <span id="est2"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\avaleht\index.html">EST</a></span>
+                <span id="eng2"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\avalehteng\avalehteng.html">ENG</a></span>
+            </div>
+        </div>
+        <a href="C:\Users\rihar\OneDrive\Desktop\UPT\avalehteng\avalehteng.html">
             <h1>ARGO RANNAMETS</h1>
         </a>
         <div class="main-links">
@@ -21,19 +38,19 @@
                 <h2 id="avaleht"><a>HOMEPAGE</a>
             </span>
             <span id="getthings" style="padding-left:5px"><a
-                    href="getthingsdoneeng.html">GET
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\getthingsdoneeng\getthingsdoneeng.html">GET
                     THINGS
                     DONE</a></span>
             <span id="coach" style="padding-left:5px"><a
-                    href="coachingeng.html">COACHING &
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\coachingeng\coachingeng.html">COACHING &
                     MENTORING</a></span>
             <span id="blogi" style="padding-left:5px"><a
-                    href="blogieng.html">BLOG</a></span>
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\blogieng\blogieng.html">BLOG</a></span>
             <span id="kontakt" style="padding-left: 5x"><a
-                    href="kontakteng.html">CONTACT</a></span>
+                    href="C:\Users\rihar\OneDrive\Desktop\UPT\kontakteng\kontakteng.html">CONTACT</a></span>
             </h2>
             <div class="language-links">
-                <span id="est"><a href="index.html"
+                <span id="est"><a href="C:\Users\rihar\OneDrive\Desktop\UPT\avaleht\index.html"
                         style="padding-right: 5px">EST</a></span>
                 <span id="eng"><a style="padding-left: 5px">ENG</a></span>
             </div>
@@ -49,14 +66,36 @@
                     can be done?<br>
                     The solution is simple</p>
                 <img src="images/getthings1.png" class="img2">
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var menuButton = document.querySelector('.menu-button');
+                        var dropdown = document.querySelector('.dropdown-content');
+
+                        menuButton.addEventListener('click', function () {
+                            var buttonRect = menuButton.getBoundingClientRect();
+
+                            if (dropdown.style.display === 'block') {
+                                dropdown.style.display = 'none';
+                                menuButton.classList.remove('no-border-bottom');
+                            } else {
+                                dropdown.style.display = 'block';
+                                menuButton.classList.add('no-border-bottom');
+                            }
+                            dropdown.style.top = buttonRect.bottom + 'px';
+                            dropdown.style.right = (document.body.clientWidth - buttonRect.right) + 'px';
+                        });
+                    });
+
+                </script>
 </body>
 <p>The performance of the organization improves significantly, the speed of achieving goals increases,<br>
     cooperation and people's motivation improve and much, much more.<br>
-    See more<a href="getthingsdoneeng.html"> here</a></p>
+    See more<a href="C:\Users\rihar\OneDrive\Desktop\UPT\getthingsdoneeng\getthingsdoneeng.html"> here</a></p>
 
 <img src="images/coachingimage.png" class="img3">
 <p>Topics related to personal or professional development are divided into three groups.<br>
-    See more <a href="coachingeng.html">here</a></p>
+    See more <a href="C:/Users/rihar/OneDrive/Desktop/UPT/coachingeng/coachingeng.html">here</a></p>
 <div id="info">
     <a href="https://www.linkedin.com/in/argorannamets" target="_blank">
         <img src="images/Screenshot 2024-02-04 131455.png" alt="LinkedIn icon" class="info">
