@@ -261,6 +261,10 @@ h1 {
     text-decoration: none;
 }
 
+#kontakt a:hover {
+    color:black;
+}
+
 .menu-button {
     display: none;
     cursor: pointer;
