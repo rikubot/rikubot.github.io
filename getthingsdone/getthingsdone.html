@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Argo Rannamets - Get Things Done</title>
+    <link rel="stylesheet" type="text/css" href="../getthingsdone/getthingsdone.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu-button">&#9776; Menüü</div>
+        <div class="dropdown-content" style="display: none;">
+            <span id="avaleht2"><a href="../index.html">AVALEHT</a></span>
+            <span id="getthings2"><a href="../getthingsdone/getthingsdone.html">GET
+                    THINGS DONE</a></span>
+            <span id="coaching2"><a href="../coaching/coaching.html">COACHING &
+                    MENTORING</a></span>
+            <span id="blogi"><a href="../blogi/blogi.html">BLOGI</a></span>
+            <span id="kontakt2"><a href="../kontakt/kontakt.html">KONTAKT</a></span>
+            <div class="language-switcher">
+                <span id="est2"><a href="../getthingsdone/getthingsdone.html">EST</a></span>
+                <a href="../getthingsdone/getthingsdoneeng.html">ENG</a>
+            </div>
+        </div>
+        <a href="../index.html">
+            <h1>ARGO RANNAMETS</h1>
+        </a>
+        <div class="main-links">
+            <h2 id="avaleht">
+                <a href="../index.html">AVALEHT</a>
+                <span id="getthings" style="padding-left:5px"><a>GET THINGS DONE</a></span>
+                <span id="coach" style="padding-left:5px"><a href="../coaching/coaching.html">COACHING &
+                        MENTORING</a></span>
+                <span id="blogi" style="padding-left:5px"><a href="../blogi/blogi.html">BLOGI</a></span>
+                <span id="kontakt" style="padding-left: 5x"><a href="../kontakt/kontakt.html">KONTAKT</a></span>
+            </h2>
+            <div class="language-links">
+                <span id="est"><a style="padding-right: 5px">EST</a></span>
+                <span id="eng"><a href="../getthingsdone/getthingsdoneeng.html" style="padding-left: 5px">ENG</a></span>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div>
+            <img src="../images/Slide1-1 (1).jpg" class="img-responsive">
+        </div>
+        <div id="list">
+            <p>Lahendus on lihtne. Vaja on tööle saada 6 etappi/osa:
+            <ol>
+                <li>Eesmärkide seadmine</li>
+                <li>Fookus ja organisatsiooni joondamine</li>
+                <li>Kiirus</li>
+                <li>Tahe ja takistuste kõrvaldamine</li>
+                <li>Saavutused ja tähistamine</li>
+                <li>Kommunikatsioon läbi eelnevalt loetletud punktide</li>
+            </ol>
+            </p>
+        </div>
+        <div id="jutt">
+            <p>
+                Tegemist on programmiga, kus kõik komponendid sees – seinast-seina. Organisatsiooni sooritusvõime
+                paraneb
+                märgatavalt, kasvab eesmärkide saavutamise kiirus, paraneb koostöö ja inimeste motivatsioon ja
+                palju-palju
+                muud. Tegemist on maailma edukaimate ettevõtete praktikate näitel üles ehitatud programmiga. Miks
+                leiutada
+                ise, kui asjad on juba leiutatud?<br>
+                <br>
+                Juhul, kui huvi tunned, võta ühendust. Olen sulle programmi juurutamisel toeks. Minu eesmärgiks on kõik
+                sinu
+                kahtlused ja kõhklused miinimumini viia.
+            </p>
+        </div>
+    </main>
+    <div id="info">
+        <a href="https://www.linkedin.com/in/argorannamets" target="_blank">
+            <img src="../images/Screenshot 2024-02-04 131455.png" class="info" alt="LinkedIn icon">
+        </a>
+
+        <p>+372 511 0241 <br>
+            argo.rannamets@gmail.com <br>
+            Magere OÜ</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.querySelector('.menu-button');
+            var dropdown = document.querySelector('.dropdown-content');
+
+            menuButton.addEventListener('click', function () {
+                var buttonRect = menuButton.getBoundingClientRect();
+
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                    menuButton.classList.remove('no-border-bottom');
+                } else {
+                    dropdown.style.display = 'block';
+                    menuButton.classList.add('no-border-bottom');
+                }
+                dropdown.style.top = buttonRect.bottom + 'px';
+                dropdown.style.right = (document.body.clientWidth - buttonRect.right) + 'px';
+            });
+        });
+
+    </script>
+</body>
+
+</html>
